@@ -1,0 +1,30 @@
+.card {
+    width: 310px; 
+    height: 335px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgb(0, 0, 0);
+    overflow: hidden;
+    padding: 10px;
+  }
+  
+  .card-image {
+    width: auto;
+    height: 200px;
+    object-fit: cover;
+    
+  }
+  
+  .card-content   
+   {
+    padding: 15px;
+  }
+  
+  .card-title {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .card-description {
+    font-size: 14px;
+    color: #666;
+  }
