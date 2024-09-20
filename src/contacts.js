@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
 import './contacts.css'; 
-
 function ContactForm() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
-
   const handleSubmit = (e) => {
     e.preventDefault(); 
     if (!name || !email || !message) {
@@ -16,7 +14,7 @@ function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <label htmlFor="name">Name:</label>
+      <label htmlFor="name">Name</label>
       <input
         type="text"
         id="name"
@@ -26,7 +24,7 @@ function ContactForm() {
         required
       />
       <br />
-      <label htmlFor="email">Email:</label>
+      <label htmlFor="email">Email</label>
       <input
         type="email"
         id="email"
@@ -36,7 +34,7 @@ function ContactForm() {
         required
       />
       <br />
-      <label htmlFor="message">Message:</label>
+      <label htmlFor="message">Message</label>
       <textarea
         id="message"
         name="message"
@@ -49,5 +47,4 @@ function ContactForm() {
     </form> 
   );
 }
-
 export default ContactForm;

@@ -1,30 +1,57 @@
 .card {
-    width: 310px; 
-    height: 335px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgb(0, 0, 0);
-    overflow: hidden;
-    padding: 10px;
-  }
-  
-  .card-image {
-    width: auto;
-    height: 200px;
-    object-fit: cover;
-    
-  }
-  
-  .card-content   
-   {
-    padding: 15px;
-  }
-  
-  .card-title {
-    font-size: 16px;
-    font-weight: bold;
-  }
-  
-  .card-description {
-    font-size: 14px;
-    color: #666;
-  }
+  width: 310px; 
+  height: 405px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgb(0, 0, 0);
+  padding: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card-image {
+  width: auto;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content   
+ {
+  margin: 0;
+  padding: 10px;
+}
+
+.card-title {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0px;
+  margin: 0px;
+}
+
+.card-description {
+  font-size: 18px;
+  color: #666;
+  margin: 0;
+}
+
+.card-button {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.card-button-text {
+  background-color: #161616;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 0;
+}
+
+.card-button-text:hover {
+  background-color: #4b4b4b;
+}
